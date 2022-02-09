@@ -1,0 +1,20 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="numero1" 		type="Integer" default="0" />
+    <aura:attribute name="numero2" 		type="Integer" default="0" />
+   	<aura:attribute name="resultado" 	type="Integer" default="0" />
+    
+    <div style="background-color:white;">
+        Numero 1: 
+        <lightning:input aura:id="n1" type="number" value="{!v.numero1}" />
+        <br/>
+        Numero 2: 
+        <lightning:input aura:id="n2" type="number" value="{!v.numero2}"/>
+        <br/><br/> 
+        
+        Resultado da conta é: {!v.resultado} <br/><br/>
+		
+  	<lightning:button variant="brand" label="Somar" title="Somar" onclick="{!c.soma}" />        
+    <lightning:button variant="brand" label="Subtrair" title="Subtrair" onclick="{!c.sub}" /> 
+       
+    </div>
+</aura:component>

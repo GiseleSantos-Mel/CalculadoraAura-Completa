@@ -1,0 +1,28 @@
+({
+	soma : function(component, event, helper) {
+       	var n1 =  parseInt(component.get("v.numero1"));
+        var n2 =  parseInt(component.get("v.numero2"));
+        var result = n1+n2;
+        component.set("v.resultado", result);
+	},
+    sub : function(component, event, helper) {
+       	var n1 =  component.get("v.numero1");
+        var n2 =  component.get("v.numero2");
+       	var result = n1-n2;
+        component.set("v.resultado", result);
+	},
+    mult : function(component, event, helper) {
+       	var n1 =  component.get("v.numero1");
+        var n2 =  component.get("v.numero2");
+       	var result = n1*n2;
+        component.set("v.resultado", result);
+	},
+    div : function(component, event, helper) {
+       	var n1 =  component.get("v.numero1");
+        var n2 =  component.get("v.numero2");
+        var result = n1/n2;
+        component.set("v.resultado", result);
+	}
+    
+    
+})
